@@ -1,6 +1,6 @@
 # Abstraction:
 
-# In this example, the implementation details of the car is hidden and only showing the essential features.
+# In this example, the implementation details of the car are hidden and show only the essential features.
 
 class Car:
     def __init__(self):
