@@ -1,6 +1,8 @@
 # Inheritance:
-
-# In this example, Tesla class is inheriting the properties of Car and that is why we can access the method start() of Car class
+# In this example, the Tesla class is inheriting the properties of Car and that is why we can access the method start() of the Car class
+.
+# Single Inheritance:
+# In this example, one child class is inheriting the properties of one parent class so it is a single inheritance.
 
 class Car:
 
