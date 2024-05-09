@@ -11,16 +11,17 @@ class Car:
 
     @staticmethod
     def start():
-        print("Car started")
+        print("Car started..")
 
     @staticmethod
     def stop():
-        print("Car stopped")
+        print("Car stopped..")
 
 class Toyota(Car):
     def __init__(self, name, type):
-        self.name = name
         super().__init__(type)      # Here we are passing the 'type' to the '__init__' attribute
+        self.name = name
+        super().start()             # Here we are accessing the 'start' attribute from the parent class
 
 car1 = Toyota('Prius', 'Electric')
 print(car1.name)
