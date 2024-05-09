@@ -1,0 +1,27 @@
+# Super keyword:
+
+# super() is use to access the properties of parent classes.
+# Here in this example, the type of parent class Car can not be determined from the derived classes normally.
+# So, we need to use super() by the attribute name that we want to access.
+
+
+class Car:
+    def __init__(self, type):
+        self.type = type
+
+    @staticmethod
+    def start():
+        print("Car started")
+
+    @staticmethod
+    def stop():
+        print("Car stopped")
+
+class Toyota(Car):
+    def __init__(self, name, type):
+        self.name = name
+        super().__init__(type)      # Here we are passing the 'type' to the '__init__' attribute
+
+car1 = Toyota('Prius', 'Electric')
+print(car1.name)
+print(car1.type)
